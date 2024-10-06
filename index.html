@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boring Way - for the Lazy Tech Elite</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Space Grotesk', 'sans-serif'],
+                        mono: ['JetBrains Mono', 'monospace'],
+                    },
+                    colors: {
+                        'neon-green': '#39FF14',
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+        }
+        .neon-glow {
+            text-shadow: 0 0 5px #39FF14, 0 0 5px #39FF14, 0 0 20px #39FF14;
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <div id="3d-background" class="fixed top-0 left-0 w-full h-full z-0"></div>
+    
+    <header class="relative z-10 bg-black bg-opacity-70">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold font-mono text-neon-green neon-glow">Boring Way</span>
+                </div>
+                <div class="hidden md:block">
+                    <a href="#about" class="text-neon-green hover:text-white px-3 py-2 font-mono">About</a>
+                    <a href="#features" class="text-neon-green hover:text-white px-3 py-2 font-mono">Features</a>
+                    <a href="#waitlist" class="text-neon-green hover:text-white px-3 py-2 font-mono">Join Waitlist</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow relative z-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center mb-12">
+                <h1 class="text-5xl font-bold mb-4 text-neon-green neon-glow">
+                    For the Lazy Tech Elite
+                </h1>
+                <p class="text-xl text-gray-300 mb-8 font-mono">Optimize your caffeine intake. Maximize your output.</p>
+                <a href="#waitlist" class="bg-neon-green text-black font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 hover:bg-white hover:text-black">
+                    Join the Beta
+                </a>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-20">
+                <div>
+                    <h2 class="text-3xl font-bold mb-4 text-neon-green">The Boring Way Algorithm</h2>
+                    <ul class="space-y-4 font-mono">
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-2 text-neon-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Nootropic-enhanced formula</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-2 text-neon-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Precision-engineered caffeine release</span>
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="h-6 w-6 mr-2 text-neon-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span>Neural network flavor optimization</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-black bg-opacity-50 p-6 rounded-lg border border-neon-green">
+                    <pre class="font-mono text-neon-green text-sm">
+<code>
+class BoringWay:
+    def __init__(self):
+        self.caffeine = 200  # mg
+        self.nootropics = ['L-Theanine', 'Alpha-GPC']
+        self.flavor = 'Black Brew'
+
+    def brew(self):
+        return f"Compiling {self.flavor}..."
+
+    def consume(self):
+        print("Initiating productivity subroutines...")
+        print("Neural pathways optimized.")
+        print("Ready to code.")
+
+bb = BoringWay()
+bb.brew()
+bb.consume()
+</code>
+                    </pre>
+                </div>
+            </div>
+
+            <div id="waitlist" class="bg-black bg-opacity-70 rounded-lg p-8 max-w-2xl mx-auto border border-neon-green">
+                <h2 class="text-3xl font-bold mb-4 text-center text-neon-green">Access the Boring Way Early</h2>
+                <p class="mb-6 text-center font-mono">Join our elite beta testers and receive:</p>
+                <ul class="list-disc list-inside mb-6 text-gray-300 font-mono">
+                    <li>Early access to our quantum-encrypted product</li>
+                    <li>20% performance boost on your first order</li>
+                    <li>Chance to win a lifetime supply of Boring Way Products</li>
+                </ul>
+                <form class="space-y-4">
+                    <input type="email" placeholder="Enter your email" class="w-full px-4 py-2 bg-black border border-neon-green rounded-md focus:outline-none focus:ring-2 focus:ring-neon-green text-white font-mono" required>
+                    <button type="submit" class="w-full bg-neon-green text-black font-bold py-2 px-4 rounded-md hover:bg-white transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105 font-mono">
+                        Initialize Brew Sequence
+                    </button>
+                </form>
+                <p class="mt-4 text-sm text-gray-400 text-center font-mono">By joining, you agree to our terms of service and privacy policy. No robots allowed (unless you pass the Turing test).</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="relative z-10 bg-black bg-opacity-70 mt-12">
+        <div class="max-w-7xl mx-auto py-4 px-4 sm:px-6 lg:px-8 text-center text-neon-green font-mono">
+            &copy; 2024 Boring Brew. All rights reserved. Patent pending on caffeine-based quantum computing.
+        </div>
+    </footer>
+
+    <script>
+        // Three.js background setup (same as before)
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ alpha: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.getElementById('3d-background').appendChild(renderer.domElement);
+
+        // Create particles
+        const geometry = new THREE.BufferGeometry();
+        const vertices = [];
+        for (let i = 0; i < 5000; i++) {
+            vertices.push(
+                Math.random() * 2000 - 1000,
+                Math.random() * 2000 - 1000,
+                Math.random() * 2000 - 1000
+            );
+        }
+        geometry.setAttribute('position', new THREE.Float32BufferAttribute(vertices, 3));
+        const material = new THREE.PointsMaterial({ color: 0x39FF14, size: 2 });
+        const particles = new THREE.Points(geometry, material);
+        scene.add(particles);
+
+        camera.position.z = 1000;
+
+        function animate() {
+            requestAnimationFrame(animate);
+            particles.rotation.x += 0.0005;
+            particles.rotation.y += 0.0005;
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        // Resize handler
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+    </script>
+</body>
+</html>
