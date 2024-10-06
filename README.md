@@ -1,0 +1,1 @@
+# boringway.github.io
